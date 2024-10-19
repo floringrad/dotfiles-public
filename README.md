@@ -23,7 +23,7 @@ This might work on other platforms, some parts of it, maybe.
       - [Powerlevel10k](#powerlevel10k)
     - [Commands](#commands)
       - [lsd](#lsd)
-      - [LS_COLORS](#ls_colors)
+      - [LS\_COLORS](#ls_colors)
       - [vivid](#vivid)
       - [fzf](#fzf)
   - [Code Editor](#code-editor)
@@ -100,7 +100,7 @@ Available via _brew_.
 
 ### Shell
 
-MacOS coes with the _zsh_ shell as default. We'll work with that.  
+MacOS comes with the _zsh_ shell as default. We'll work with that.  
 Let's enhance it with some plugins and colors.
 
 #### oh my zsh
