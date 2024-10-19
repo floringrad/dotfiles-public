@@ -29,8 +29,6 @@ Installs the main pieces of software on Mac.
 
 In order to display symbols in the terminal, use the _font-patcher_ script to patch the fonts. It's available on the Nerd Fonts website (see below). It requires the _fontforge_ python script, available via _brew_.
 
-A python script to patch the fonts
-
 ### iTerm2
 
 Terminal able to display symbols, colors, transparent backgrounds, etc.
