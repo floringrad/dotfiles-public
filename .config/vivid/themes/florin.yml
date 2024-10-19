@@ -1,0 +1,166 @@
+colors:
+  # Original "catppuccin" theme
+  # https://github.com/catppuccin/catppuccin
+  # now "florin" theme
+
+  rosewater: 'f2d5cf'
+  flamingo: 'eebebe'
+  pink: 'f4b8e4'
+  pink_sass: 'f68dc2'
+  pink_yaml: 'ff5252'
+  mauve: 'ca9ee6'
+  red: 'e78284'
+  red_rust: 'e74d77' #'eb2d60'
+  maroon: 'ea999c'
+  peach: 'ef9f76'
+  gold: "e2d139"
+  yellow: 'e5c890'
+  yellow_js: 'ffff00'
+  snazzy_yellow: 'f3f99d'
+  green: 'a6d189'
+  green_conf: '80cbc4'
+  orange_css: 'ffd180'
+  teal: '81c8be'
+  sky: '99d1db'
+  sapphire: '85c1dc'
+  blue: '8caaee'
+  blue_python: '64b4f7'
+  blue_txt: '4FC3F7'
+  lavender: 'babbf1'
+  violet_webassembly: '8473ee'
+  
+  text: 'c6d0f5'
+  subtext1: 'b5bfe2'
+  subtext0: 'a5adce'
+  overlay2: '949cbb'
+  overlay1: '838ba7'
+  overlay0: '737994'
+  surface2: '626880'
+  surface1: '51576d'
+  surface0: '414559'
+
+  base: '303446'
+  mantle: '292c3c'
+  crust: '232634'
+
+core:
+  normal_text: {}
+  regular_file: {}
+  reset_to_normal: {}
+
+  directory:
+    foreground: blue
+
+  symlink:
+    foreground: pink
+
+  multi_hard_link: {}
+
+  fifo:
+    foreground: crust
+    background: blue
+
+  socket:
+    foreground: crust
+    background: pink
+
+  door:
+    foreground: crust
+    background: pink
+
+  block_device:
+    foreground: sapphire
+    background: surface0
+
+  character_device:
+    foreground: pink
+    background: surface0
+
+  broken_symlink:
+    foreground: crust
+    background: red
+
+  missing_symlink_target:
+    foreground: crust
+    background: red
+
+  setuid: {}
+
+  setgid: {}
+
+  file_with_capability: {}
+
+  sticky_other_writable: {}
+
+  other_writable: {}
+
+  sticky: {}
+
+  executable_file:
+    foreground: red
+    font-style: bold
+
+text:
+  special:
+    foreground: base
+    background: yellow
+
+  todo:
+    font-style: bold
+
+  licenses:
+    foreground: overlay2
+
+  configuration:
+    foreground: yellow
+    generic:
+      foreground: green_conf 
+
+  other:
+    foreground: blue_txt
+
+markup:
+  foreground: yellow
+  web:
+    foreground: red
+
+programming:
+  source:
+    foreground: green
+    css:
+      foreground: orange_css
+    javascript: 
+      foreground: yellow_js
+    python:
+      foreground: blue_python
+    rust:
+      foreground: red_rust
+    sass:
+      foreground: pink_sass
+    yaml: 
+      foreground: pink_yaml
+    webassembly:
+      foreground: violet_webassembly
+
+  tooling:
+    foreground: teal
+
+    continuous-integration:
+      foreground: green
+
+media:
+  foreground: flamingo
+
+office:
+  foreground: red
+
+archives:
+  foreground: sapphire
+  font-style: underline
+
+executable:
+  foreground: red
+  font-style: bold
+
+unimportant:
+  foreground: surface2

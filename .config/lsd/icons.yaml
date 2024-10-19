@@ -1,0 +1,24 @@
+name:
+  applications: 󰔶
+  'calibre library': 
+  desktop: 
+  dev: 
+  documents: 
+  downloads: 
+  library: 
+  movies: 
+  music: 
+  myapplications: 󰔷
+  pictures: 
+extension:
+  css: 󰐣
+  epub: 
+  html: 
+  js: 󰅩
+  json: 
+  toml: 󰢻
+  yaml: 󰈙
+  zip: 
+filetype:
+  dir: 
+  symlink-dir: 'hello'
