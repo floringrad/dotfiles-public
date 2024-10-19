@@ -25,6 +25,7 @@ This might work on other platforms, some parts of it, maybe.
       - [lsd](#lsd)
       - [LS_COLORS](#ls_colors)
       - [vivid](#vivid)
+      - [](#)
   - [Code Editor](#code-editor)
     - [VsCode](#vscode-1)
   - [Links:](#links)
@@ -123,18 +124,32 @@ Oh My Zsh is a delightful, open source, community-driven framework for managing 
 
 - Plugins
 
-  Example of the plugins section in the configuration file:
+  Oh-my-zsh comes with a series of plugins.
+  We can manually install more plugins in the ~/.oh-my-zsh/custom/plugins directory.
+
+  Example of a manual plugin install:
+
+  ```
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  ```
+
+  Example of the plugins section in the configuration file.  
+  Note: the last 3 plugins were installed manually.
 
   ```
   plugins=(
-  colored-man-pages
-  deno
-  git
-  pip
-  python
-  rust
-  vscode
-  web-search
+    colored-man-pages
+    deno
+    git
+    pip
+    python
+    rust
+    vscode
+    web-search
+    # other plugins...
+    zsh-autosuggestions
+    zsh-completions
+    zsh-syntax-highlighting
   )
   ```
 
@@ -240,6 +255,8 @@ vivid is a generator for the _LS_COLORS_ environment variable that controls the 
   ```
   export LS_COLORS="$(vivid generate florin)"
   ```
+
+####
 
 ## Code Editor
 
