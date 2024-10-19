@@ -75,8 +75,8 @@ Download a font, then run the command here below. This will create a new patched
 
 Example:
 
-```
-❯ fontforge --script ../FontPatcher/font-patcher --complete JetBrainsMono-Regular.ttf
+```zsh
+fontforge --script ../FontPatcher/font-patcher --complete JetBrainsMono-Regular.ttf
 ```
 
 3. Add it to your Mac  
@@ -109,20 +109,22 @@ Oh My Zsh is a delightful, open source, community-driven framework for managing 
 - Install  
   The following command, run from the _$HOME_ directory, will install it via curl in the ~/.oh-my-zh directory:
 
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+  ```zsh
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ```
 
 - Configuration  
   The configuration file is ~/.zshrc  
   Note: every time we modify this file, in order to update the changes to the environment, we need to restart the terminal or run the following command:
 
-  ```
+  ```zsh
   source ~/.zshrc
   ```
 
-- Plugins  
+- Plugins
+
   Example of the plugins section in the configuration file:
+
   ```
   plugins=(
   colored-man-pages
@@ -140,14 +142,19 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 Powerlevel10k is a theme for Zsh, it enbelishes the _prompt_.
 
-- Install  
-  The follwing command install it via _git_.
-  ```
+- Install
+
+  The following command will install it via _git_.
+
+  ```zsh
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   ```
-- Configure  
+
+- Configure
+
   Run the following command and then answer to the questions:
-  ```
+
+  ```zsh
   p10k configure
   ```
 
@@ -160,24 +167,27 @@ Let's add some more commands:
 Clone of the _ls_ command with colorful output, file type icons, and more, written in Rust.  
 We will use this instead of the standard _ls_.
 
-- Install  
+- Install
+
   Available via _brew_.
 
-- Alias  
+- Alias
+
   Replace the _ls_ command by adding an alias in the ~/.zshrc file
 
-  ```
+  ```zsh
   alias ls='lsd'
   ```
 
-- Configuration  
+- Configuration
+
   The configuration directory is ~/.config/lsd/
 
   1. modify options of the _ls_ command with the _config.yaml_ file.  
      Note: _lsd_ uses _crossterm_ so check their _Enum crossterm::style::Color_ section for the available colours. The options are some presets, RGB or ANSI colors. Check out the cheet sheet in the [_Links_](#links) section.
 
   2. use custom icons, by _name_, _extension_ or _filetype_ with the _icons.yaml_ file.  
-     Just open _Font Book_ and _copy/paste_ symbols from the current font into this file.
+     Simply open _Font Book_ and _copy/paste_ symbols from the current font into this file.
 
   3. use custom colors for the _blocks_ with the _colors.yaml_ file.  
      Note: Now all the filetypes have the same color.  
@@ -190,23 +200,27 @@ This is a collection of extension:color mappings, suitable to use as your LS_COL
 - Install  
   Just download the _lscolors.sh_ binary from their site, see the link in the [_Links_](#links) section, and copy it in the ~/.bin/ directory, for example.  
   We could stop here and add an entry in the ~/.zshrc file like so:
-  ```
+
+  ```zsh
   # LS_COLORS
   source ~/.bin/lscolors.sh
   ```
+
   But we would like to customize these colors, so we'll use _vivid_, a generator for the _LS_COLORS_ environment variable, checkout the [_vivid_](#vivid) section for the details.
 
 #### vivid
 
 vivid is a generator for the _LS_COLORS_ environment variable that controls the colorized output of _ls_, _tree_, _fd_, _bfs_, _dust_ and many other tools.
 
-- Install  
+- Install
+
   Available via _brew_.
 
-- Configuration  
-   _vivid_ comes with several themes and the following command will show you the output for each theme.
+- Configuration
 
-  ```
+  _vivid_ comes with several themes and the following command will show you the output for each theme.
+
+  ```zsh
   for theme in $(vivid themes); do
     echo "Theme: $theme"
     LS_COLORS=$(vivid generate $theme)
@@ -215,9 +229,12 @@ vivid is a generator for the _LS_COLORS_ environment variable that controls the 
   done
   ```
 
-  There's a problem though: for each theme, all the files seem to have the same colour. We want different colours based on the file extension.  
-  So we'll create our own theme, called _florin_, with the file _florin.yml_ and put it in the _~/.config/vivid/themes/_ directory. I'll start off from the _catppuccin_ theme and customize things.  
-  We'll also add the default _filetypes.yml_ file so we can customize the _file types_ and put it in the _~/.config/vivid/_ directory.  
+  There's a problem though: for each theme, all the files seem to have the same colour. We want different colours based on the file extension.
+
+  So we'll create our own theme, called _florin_, with the file _florin.yml_ and put it in the _~/.config/vivid/themes/_ directory. I'll start off from the _catppuccin_ theme and customize things.
+
+  We'll also add the default _filetypes.yml_ file so we can customize the _file types_ and put it in the _~/.config/vivid/_ directory.
+
   Finally, we'll add the following line to the ~/.zshrc file.
 
   ```
@@ -231,7 +248,8 @@ I will start with _VsCode_.
 
 ### VsCode
 
-- Install  
+- Install
+
   Available via _brew_.
 
 ## Links:
