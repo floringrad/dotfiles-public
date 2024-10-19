@@ -1,7 +1,7 @@
 # dotfiles-public
 
 Florin's MacBook development setup, so yeah, it's more than dotfiles.  
-This might work on other platforms, maybe.
+This might work on other platforms, some parts of it, maybe.
 
 **Word of caution**: I recommend understanding my settings before applying them. Use them at your own risk!
 
@@ -19,6 +19,7 @@ This might work on other platforms, maybe.
 - brew
 - font-patcher
 - iTerm2
+- oh-my-zsh
 - VsCode
 
 ### brew
@@ -39,14 +40,27 @@ Code editor maintained by MicroSoft.
 
 ## Fonts
 
-Use mono fonts for the terminal and the code editor(s).
-The _fonts_ directory contains a few fonts that are already patched.
+Use monospaced fonts for the terminal or the code editor.  
+The _fonts_ directory contains a few fonts that are already patched.  
+Here are the steps involved:
+
+1. Download
+
+2. Patch
+
+Download a font, then run the command here below. This will create a new patched font in the same directory.
 
 Example:
 
 ```
 ❯ fontforge --script ../FontPatcher/font-patcher --complete JetBrainsMono-Regular.ttf
 ```
+
+3. Add it to your Mac  
+   Open _Font Book_ and simply _drag & drop_ the new patched font.
+
+4. Add it to your Software  
+   See the _Terminal_ or _Code editor_ sections for the patched font setup.
 
 ###
 
