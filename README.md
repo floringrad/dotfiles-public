@@ -25,7 +25,7 @@ This might work on other platforms, some parts of it, maybe.
       - [lsd](#lsd)
       - [LS_COLORS](#ls_colors)
       - [vivid](#vivid)
-      - [](#)
+      - [fzf](#fzf)
   - [Code Editor](#code-editor)
     - [VsCode](#vscode-1)
   - [Links:](#links)
@@ -186,12 +186,16 @@ We will use this instead of the standard _ls_.
 
   Available via _brew_.
 
-- Alias
+- Aliases
 
-  Replace the _ls_ command by adding an alias in the ~/.zshrc file
+  Replace the _ls_ command by adding a few aliases in the ~/.oh-my-zsh/custom/aliases.zsh file.
 
   ```zsh
   alias ls='lsd'
+  alias l='ls -l'
+  alias la='ls -a'
+  alias lla='ls -la'
+  alias lt='ls --tree'
   ```
 
 - Configuration
@@ -256,7 +260,20 @@ vivid is a generator for the _LS_COLORS_ environment variable that controls the 
   export LS_COLORS="$(vivid generate florin)"
   ```
 
-####
+#### fzf
+
+fzf is a general-purpose command-line fuzzy finder.  
+In the .zshrc file we add the _fcd_ function.
+
+```
+# for fzf
+fcd() {
+        local dir
+        dir=$(find ${1:-.} -type d -not -path '*/\.*' -not -path '*Library*' -not -path '*Processing*' -not -path '*Scrivener*' 2> /dev/null | fzf +m) && cd "$dir"
+}
+```
+
+We can now use the _fcd_ function in the terminal. This will provide a list of the files found in the current directory tree, we can then use the keyboard to select an item.
 
 ## Code Editor
 
