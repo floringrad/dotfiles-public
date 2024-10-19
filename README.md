@@ -263,7 +263,8 @@ vivid is a generator for the _LS_COLORS_ environment variable that controls the 
 #### fzf
 
 fzf is a general-purpose command-line fuzzy finder.  
-In the .zshrc file we add the _fcd_ function.
+In the .zshrc file we add the _fcd_ function.  
+Check our more examples on their website, link in the [_Links_](#links) section.
 
 ```
 # for fzf
@@ -296,3 +297,4 @@ I will start with _VsCode_.
 - [Color cheat sheet](https://www.ditig.com/publications/256-colors-cheat-sheet) - List of 256 colors for Xterm prompt (console)
 - [LS_COLORS](https://github.com/trapd00r/LS_COLORS) - A collection of extension:color mappings
 - [vivid](https://github.com/sharkdp/vivid) - A generator for the LS_COLORS environment variable
+- [fzf](https://github.com/junegunn/fzf) - A general-purpose command-line fuzzy finder
