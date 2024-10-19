@@ -89,7 +89,7 @@ Example:
 
 The end result will look something like the following:
 
-![lsd ll screenshot](./images/zsh-lsd.png)
+<img src="./images/zsh-lsd.png" width="50%" height="50%">
 
 We will install the iTerm2 terminal instead of the default one.
 
