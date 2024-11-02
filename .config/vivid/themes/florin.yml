@@ -139,6 +139,8 @@ programming:
       foreground: pink_sass
     yaml: 
       foreground: pink_yaml
+    webassembly-text:
+      foreground: violet_webassembly
     webassembly:
       foreground: violet_webassembly
 

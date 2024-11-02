@@ -17,6 +17,8 @@ extension:
   js: 󰅩
   json: 
   toml: 󰢻
+  wasm: 
+  wat: 
   yaml: 󰈙
   zip: 
 filetype:

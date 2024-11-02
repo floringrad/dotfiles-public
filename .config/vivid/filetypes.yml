@@ -185,6 +185,7 @@ programming:
     v: [.v, .vsh]
     viml: [.vim]
     webassembly: [.wasm]
+    webassembly-text: [.wat]
     zig: [.zig]
 
   tooling:
